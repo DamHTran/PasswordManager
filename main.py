@@ -4,6 +4,8 @@ from tkinter import *
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
+
+
 # ---------------------------- UI SETUP ------------------------------- #
 
 # Create window
@@ -22,21 +24,21 @@ website_label = Label(text="Website: ", bg="white")
 website_label.grid(row=1, column=0)
 
 website_entry = Entry(window, width=52)
-website_entry.focus_set()
+# To put the cursor at the beginning
+website_entry.focus()
 website_entry.grid(row=1, column=1, columnspan=2)
 
 username_label = Label(text="Email/Username: ", bg="white")
 username_label.grid(row=2, column=0)
 
 username_entry = Entry(window, width=52)
-username_entry.focus_set()
+username_entry.insert(0, "thdam3012@gmail.com")
 username_entry.grid(row=2, column=1, columnspan=2)
 
 password_label = Label(text="Password: ", bg="white")
 password_label.grid(row=3, column=0)
 
 password_entry = Entry(window, width=33)
-password_entry.focus_set()
 password_entry.grid(row=3, column=1)
 
 # Create button
